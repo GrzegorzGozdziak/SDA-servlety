@@ -1,0 +1,19 @@
+<web-app>
+    <servlet>
+        <servlet-name>MyServlets</servlet-name>
+        <servlet-class>pl.sda.MyServlets</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PathServlet</servlet-name>
+        <servlet-class>pl.sda.PathServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MyServlets</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PathServlet</servlet-name>
+        <url-pattern>/path/*</url-pattern>
+    </servlet-mapping>
+</web-app>
