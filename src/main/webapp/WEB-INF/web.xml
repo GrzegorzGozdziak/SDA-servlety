@@ -7,6 +7,10 @@
         <servlet-name>PathServlet</servlet-name>
         <servlet-class>pl.sda.PathServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>UserServlet</servlet-name>
+        <servlet-class>pl.sda.UserServlet</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>MyServlets</servlet-name>
@@ -15,5 +19,9 @@
     <servlet-mapping>
         <servlet-name>PathServlet</servlet-name>
         <url-pattern>/path/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/user/*</url-pattern>
     </servlet-mapping>
 </web-app>
